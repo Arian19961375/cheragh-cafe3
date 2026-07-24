@@ -13,8 +13,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 <style>
 
 *{
@@ -30,11 +28,13 @@ scroll-behavior:smooth;
 
 body{
 
-background:#f7f5ef;
+background:#f5f5ef;
 
 color:#222;
 
 line-height:1.8;
+
+overflow-x:hidden;
 
 }
 
@@ -43,8 +43,8 @@ header{
 height:100vh;
 
 background:
-linear-gradient(rgba(18,71,43,.78),rgba(18,71,43,.78)),
-url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1800&auto=format&fit=crop");
+linear-gradient(rgba(17,74,44,.75),rgba(17,74,44,.75)),
+url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=crop");
 
 background-size:cover;
 
@@ -58,21 +58,23 @@ align-items:center;
 
 text-align:center;
 
-padding:30px;
+padding:25px;
 
 }
 
 .hero{
 
-max-width:800px;
+max-width:700px;
 
-color:#fff;
+width:100%;
 
 }
 
 .hero h1{
 
-font-size:72px;
+font-size:70px;
+
+color:white;
 
 font-weight:800;
 
@@ -84,6 +86,8 @@ margin-bottom:20px;
 
 font-size:24px;
 
+color:white;
+
 margin-bottom:40px;
 
 }
@@ -92,9 +96,9 @@ margin-bottom:40px;
 
 display:inline-block;
 
-padding:16px 42px;
+padding:16px 45px;
 
-background:#d4aa5a;
+background:#C8A96A;
 
 color:white;
 
@@ -110,7 +114,7 @@ transition:.3s;
 
 .btn:hover{
 
-background:#bc9448;
+background:#b68f4f;
 
 transform:translateY(-3px);
 
@@ -118,11 +122,13 @@ transform:translateY(-3px);
 
 section{
 
-padding:80px 25px;
+width:100%;
 
 max-width:1200px;
 
 margin:auto;
+
+padding:70px 18px;
 
 }
 
@@ -144,21 +150,29 @@ font-weight:800;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
 gap:25px;
+
+justify-content:center;
 
 }
 
 .card{
 
-background:white;
-
-padding:25px;
+background:#fff;
 
 border-radius:20px;
 
-box-shadow:0 15px 35px rgba(0,0,0,.08);
+padding:25px;
+
+width:100%;
+
+max-width:420px;
+
+margin:auto;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 transition:.3s;
 
@@ -166,7 +180,7 @@ transition:.3s;
 
 .card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-6px);
 
 }
 
@@ -176,15 +190,17 @@ color:#155d38;
 
 margin-bottom:20px;
 
-padding-right:10px;
+padding-right:12px;
 
-border-right:5px solid #d4aa5a;
+border-right:5px solid #C8A96A;
+
+font-size:28px;
 
 }
 
 .item{
 
-padding:12px 0;
+padding:13px 0;
 
 border-bottom:1px dashed #ddd;
 
@@ -193,6 +209,90 @@ border-bottom:1px dashed #ddd;
 .item:last-child{
 
 border:none;
+
+}
+
+footer{
+
+background:#155d38;
+
+color:white;
+
+text-align:center;
+
+padding:50px 20px;
+
+margin-top:60px;
+
+}
+
+.instagram{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 28px;
+
+background:#E1306C;
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:bold;
+
+font-size:18px;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.instagram:hover{
+
+background:#c91d5d;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.title{
+
+font-size:32px;
+
+}
+
+section{
+
+padding:50px 15px;
+
+}
+
+.menu{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+max-width:100%;
+
+}
 
 }
 
@@ -209,7 +309,9 @@ border:none;
 <h1>کافه چراگ</h1>
 
 <p>
+
 Restaurant • Cafe • Hookah
+
 </p>
 
 <a href="#menu" class="btn">
@@ -231,77 +333,48 @@ Restaurant • Cafe • Hookah
 
 <h2>🍕 پیتزا</h2>
 
-<div class="item">پیتزا مخلوط</div>
-
-<div class="item">پیتزا چیکن باربیکیو</div>
-
-<div class="item">پیتزا چیکن آلفردو</div>
-
-<div class="item">پیتزا پپرونی</div>
-
 <div class="item">پیتزا مخصوص چراگ</div>
-
+<div class="item">پیتزا مخلوط</div>
+<div class="item">پیتزا پپرونی</div>
+<div class="item">پیتزا چیکن باربیکیو</div>
+<div class="item">پیتزا چیکن آلفردو</div>
 <div class="item">پیتزا بیکن</div>
-
 <div class="item">پیتزا رست بیف</div>
-
 <div class="item">پیتزا سیر و استیک</div>
-
 <div class="item">پیتزا مارگاریتا</div>
-
 <div class="item">پیتزا سبزیجات</div>
 
 </div>
-
-
 
 <div class="card">
 
 <h2>🍔 برگر</h2>
 
 <div class="item">برگر کلاسیک ذغالی</div>
-
 <div class="item">چیزبرگر ذغالی</div>
-
 <div class="item">رویال برگر ذغالی</div>
-
 <div class="item">دبل برگر ذغالی</div>
-
 <div class="item">ماشروم برگر ذغالی</div>
-
 <div class="item">برگر مخصوص چراگ</div>
-
-<div class="item">هالو برگر ذغالی</div>
-
+<div class="item">هالو برگر</div>
 <div class="item">چیکن برگر گریل</div>
-
 <div class="item">چیکن برگر سوخاری</div>
 
 </div>
-
-
 
 <div class="card">
 
 <h2>🥪 ساندویچ</h2>
 
 <div class="item">ساندویچ چیکن باربیکیو</div>
-
-<div class="item">ساندویچ هات داگ اسپشیال</div>
-
-<div class="item">ساندویچ هات داگ</div>
-
-<div class="item">ساندویچ رست بیف</div>
-
-<div class="item">ساندویچ بیف بریسکت</div>
-
-<div class="item">ساندویچ چیکن پستیکا</div>
-
-<div class="item">ساندویچ BLT</div>
-
-<div class="item">ساندویچ ژامبون سرد</div>
-
-<div class="item">ساندویچ فیله مرغ سرد</div>
+<div class="item">هات داگ اسپشیال</div>
+<div class="item">هات داگ</div>
+<div class="item">رست بیف</div>
+<div class="item">بیف بریسکت</div>
+<div class="item">چیکن پستیکا</div>
+<div class="item">BLT</div>
+<div class="item">ساندویچ ژامبون</div>
+<div class="item">ساندویچ فیله مرغ</div>
 
 </div>
 
@@ -314,91 +387,108 @@ Restaurant • Cafe • Hookah
 
 <div class="card">
 
-<h2>🍟 پیش غذا</h2>
+<h2>🍟 پیش‌غذا</h2>
 
-<div class="item">هوم فرایز</div>
-
-<div class="item">بیکن دیپ فرایز</div>
-
-<div class="item">وایت فرایز</div>
-
-<div class="item">چیکن آلفردو فرایز</div>
-
-<div class="item">سیب دیپ سوخاری</div>
-
+<div class="item">سیب زمینی ساده</div>
+<div class="item">سیب زمینی ویژه</div>
+<div class="item">چیپس و پنیر</div>
 <div class="item">پیاز سوخاری</div>
-
 <div class="item">نان سیر</div>
+<div class="item">بال و کتف سوخاری</div>
+<div class="item">قارچ سوخاری</div>
 
 </div>
-
-
 
 <div class="card">
 
 <h2>🥗 سالاد</h2>
 
 <div class="item">سالاد سزار</div>
-
 <div class="item">سالاد سزار با مرغ گریل</div>
-
 <div class="item">سالاد سزار با مرغ سوخاری</div>
-
 <div class="item">سالاد مخصوص چراگ</div>
 
 </div>
 
-
-
 <div class="card">
 
-<h2>🎁 پکیج‌های اقتصادی</h2>
+<h2>🥤 نوشیدنی‌ها</h2>
 
-<div class="item">کمبو ۱ (ویژه)</div>
-
-<div class="item">کمبو ۲</div>
-
-<div class="item">کمبو ۳</div>
-
-<div class="item">کمبو ۴</div>
+<div class="item">آب معدنی</div>
+<div class="item">نوشابه</div>
+<div class="item">دلستر</div>
+<div class="item">موهیتو</div>
+<div class="item">لیموناد</div>
+<div class="item">آیس لاته</div>
+<div class="item">آیس آمریکانو</div>
+<div class="item">اسموتی فصل</div>
 
 </div>
 
+<div class="card">
 
+<h2>🍰 دسر</h2>
+
+<div class="item">کیک شکلاتی</div>
+<div class="item">چیزکیک</div>
+<div class="item">براونی</div>
+<div class="item">بستنی</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="menu">
 
 <div class="card">
 
 <h2>💨 منوی قلیان</h2>
 
 <div class="item">🍎 دوسیب</div>
-
 <div class="item">🍇 انگور</div>
-
 <div class="item">🍉 هندوانه</div>
-
 <div class="item">🍓 توت فرنگی</div>
-
 <div class="item">🍍 آناناس</div>
-
 <div class="item">🥭 انبه</div>
-
-<div class="item">🍑 هلو</div>
-
 <div class="item">🍒 آلبالو</div>
-
+<div class="item">🍑 هلو</div>
 <div class="item">🫐 بلوبری</div>
-
 <div class="item">🥝 کیوی</div>
-
-<div class="item">🍋 لیمو</div>
-
 <div class="item">🍊 پرتقال</div>
-
+<div class="item">🍋 لیمو</div>
 <div class="item">🍈 طالبی</div>
-
 <div class="item">🍌 موز</div>
-
 <div class="item">🌿 نعناع</div>
+
+</div>
+
+<div class="card">
+
+<h2>📍 اطلاعات تماس</h2>
+
+<p style="margin:18px 0;font-size:18px;">
+📍 جنت‌آباد، نیایش مال، طبقه <b>منفی یک</b>
+</p>
+
+<p style="margin:15px 0;font-size:18px;">
+📞 0912-3502490
+</p>
+
+<p style="margin:15px 0;font-size:18px;">
+📞 0912-3006706
+</p>
+
+<a
+href="https://www.instagram.com/cherag_restaurant?igsh=ejRxN2hiOGNM2p4&utm_source=qr"
+target="_blank"
+class="instagram">
+
+📷 ورود به پیج اینستاگرام کافه چراگ
+
+</a>
 
 </div>
 
@@ -410,33 +500,13 @@ Restaurant • Cafe • Hookah
 
 <h2>کافه چراگ</h2>
 
-<br>
-
-<p>📍 جنت آباد، نیایش مال، طبقه -۱</p>
-
-<br>
-
-<p>📞 0912-3502490</p>
-
-<p>📞 0912-3006706</p>
-
-<br>
-
-<p>
-
-<a href="https://www.instagram.com/cherag_restaurant?igsh=ejRxN2hiOGNM2p4&utm_source=qr"
-
-style="color:white;text-decoration:none;">
-
-📷 Instagram @cherag_restaurant
-
-</a>
-
+<p style="margin-top:15px;">
+با آرزوی لحظاتی خوش در کنار شما ❤️
 </p>
 
-<br>
-
-<p>© 2026 Cherag Cafe</p>
+<p style="margin-top:20px;">
+© 2026 Cherag Cafe
+</p>
 
 </footer>
 
