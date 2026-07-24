@@ -1,1 +1,445 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>کافه چراگ | Cherag Cafe</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f7f5ef;
+
+color:#222;
+
+line-height:1.8;
+
+}
+
+header{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(18,71,43,.78),rgba(18,71,43,.78)),
+url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1800&auto=format&fit=crop");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.hero{
+
+max-width:800px;
+
+color:#fff;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 42px;
+
+background:#d4aa5a;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#bc9448;
+
+transform:translateY(-3px);
+
+}
+
+section{
+
+padding:80px 25px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:42px;
+
+color:#155d38;
+
+margin-bottom:50px;
+
+font-weight:800;
+
+}
+
+.menu{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h2{
+
+color:#155d38;
+
+margin-bottom:20px;
+
+padding-right:10px;
+
+border-right:5px solid #d4aa5a;
+
+}
+
+.item{
+
+padding:12px 0;
+
+border-bottom:1px dashed #ddd;
+
+}
+
+.item:last-child{
+
+border:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>کافه چراگ</h1>
+
+<p>
+Restaurant • Cafe • Hookah
+</p>
+
+<a href="#menu" class="btn">
+
+مشاهده منو
+
+</a>
+
+</div>
+
+</header>
+<section id="menu">
+
+<h2 class="title">🍽 منوی کافه چراگ</h2>
+
+<div class="menu">
+
+<div class="card">
+
+<h2>🍕 پیتزا</h2>
+
+<div class="item">پیتزا مخلوط</div>
+
+<div class="item">پیتزا چیکن باربیکیو</div>
+
+<div class="item">پیتزا چیکن آلفردو</div>
+
+<div class="item">پیتزا پپرونی</div>
+
+<div class="item">پیتزا مخصوص چراگ</div>
+
+<div class="item">پیتزا بیکن</div>
+
+<div class="item">پیتزا رست بیف</div>
+
+<div class="item">پیتزا سیر و استیک</div>
+
+<div class="item">پیتزا مارگاریتا</div>
+
+<div class="item">پیتزا سبزیجات</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>🍔 برگر</h2>
+
+<div class="item">برگر کلاسیک ذغالی</div>
+
+<div class="item">چیزبرگر ذغالی</div>
+
+<div class="item">رویال برگر ذغالی</div>
+
+<div class="item">دبل برگر ذغالی</div>
+
+<div class="item">ماشروم برگر ذغالی</div>
+
+<div class="item">برگر مخصوص چراگ</div>
+
+<div class="item">هالو برگر ذغالی</div>
+
+<div class="item">چیکن برگر گریل</div>
+
+<div class="item">چیکن برگر سوخاری</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>🥪 ساندویچ</h2>
+
+<div class="item">ساندویچ چیکن باربیکیو</div>
+
+<div class="item">ساندویچ هات داگ اسپشیال</div>
+
+<div class="item">ساندویچ هات داگ</div>
+
+<div class="item">ساندویچ رست بیف</div>
+
+<div class="item">ساندویچ بیف بریسکت</div>
+
+<div class="item">ساندویچ چیکن پستیکا</div>
+
+<div class="item">ساندویچ BLT</div>
+
+<div class="item">ساندویچ ژامبون سرد</div>
+
+<div class="item">ساندویچ فیله مرغ سرد</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="menu">
+
+<div class="card">
+
+<h2>🍟 پیش غذا</h2>
+
+<div class="item">هوم فرایز</div>
+
+<div class="item">بیکن دیپ فرایز</div>
+
+<div class="item">وایت فرایز</div>
+
+<div class="item">چیکن آلفردو فرایز</div>
+
+<div class="item">سیب دیپ سوخاری</div>
+
+<div class="item">پیاز سوخاری</div>
+
+<div class="item">نان سیر</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>🥗 سالاد</h2>
+
+<div class="item">سالاد سزار</div>
+
+<div class="item">سالاد سزار با مرغ گریل</div>
+
+<div class="item">سالاد سزار با مرغ سوخاری</div>
+
+<div class="item">سالاد مخصوص چراگ</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>🎁 پکیج‌های اقتصادی</h2>
+
+<div class="item">کمبو ۱ (ویژه)</div>
+
+<div class="item">کمبو ۲</div>
+
+<div class="item">کمبو ۳</div>
+
+<div class="item">کمبو ۴</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>💨 منوی قلیان</h2>
+
+<div class="item">🍎 دوسیب</div>
+
+<div class="item">🍇 انگور</div>
+
+<div class="item">🍉 هندوانه</div>
+
+<div class="item">🍓 توت فرنگی</div>
+
+<div class="item">🍍 آناناس</div>
+
+<div class="item">🥭 انبه</div>
+
+<div class="item">🍑 هلو</div>
+
+<div class="item">🍒 آلبالو</div>
+
+<div class="item">🫐 بلوبری</div>
+
+<div class="item">🥝 کیوی</div>
+
+<div class="item">🍋 لیمو</div>
+
+<div class="item">🍊 پرتقال</div>
+
+<div class="item">🍈 طالبی</div>
+
+<div class="item">🍌 موز</div>
+
+<div class="item">🌿 نعناع</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>کافه چراگ</h2>
+
+<br>
+
+<p>📍 جنت آباد، نیایش مال، طبقه -۱</p>
+
+<br>
+
+<p>📞 0912-3502490</p>
+
+<p>📞 0912-3006706</p>
+
+<br>
+
+<p>
+
+<a href="https://www.instagram.com/cherag_restaurant?igsh=ejRxN2hiOGNM2p4&utm_source=qr"
+
+style="color:white;text-decoration:none;">
+
+📷 Instagram @cherag_restaurant
+
+</a>
+
+</p>
+
+<br>
+
+<p>© 2026 Cherag Cafe</p>
+
+</footer>
+
+</body>
+
+</html>
